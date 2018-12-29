@@ -2,20 +2,20 @@ package LinkedLists;
 
 import Exceptions.ListIndexOutOfBoundsException;
 
-public class ReferenceBased {
-
-    private Node head;
+public class ReferenceBasedLinkedList {
+/*
+    private Node<E> head;
     private int numItems;
 
-    public ReferenceBased() {
+    public ReferenceBasedLinkedList() {
         numItems = 0;
         head = null;
     } // end Default Constructor
 
-    private Node find(int index) {
-        Node curr = head;
+    private Node<E> find(int index) {
+        Node<E> curr = head;
         for (int skip = 0; skip < index; skip++) {
-            curr = curr.next;
+            curr = curr.getNext();
         }
         return curr;
     } // end find
@@ -29,19 +29,21 @@ public class ReferenceBased {
     } // end size
 
     public void add(int index, Object item) throws ListIndexOutOfBoundsException {
-        if (index >= 0 && index < numItems + 1) {
+        if (index >= 0 && index < numItems+1) {
             if (index == 0) {
                 // insert at start of list
                 Node newNode = new Node(item, head);
                 head = newNode;
-            } else {
-                Node prev = find(index - 1);
+            }
+            else {
+                Node prev = find(index-1);
                 // insert after prev reference
                 Node newNode = new Node(item, prev.next);
                 prev.next = newNode;
             }
             numItems++;
-        } else {
+        }
+        else {
             throw new ListIndexOutOfBoundsException("List index out of bounds on add");
         }
     } // end add
@@ -51,14 +53,16 @@ public class ReferenceBased {
             if (index == 1) {
                 // delete first node
                 head = head.next;
-            } else {
-                Node prev = find(index - 1);
+            }
+            else {
+                Node prev = find(index-1);
                 // delete after prev reference
                 Node curr = prev.next;
                 prev.next = curr.next;
             }
             numItems--;
-        } else {
+        }
+        else {
             throw new ListIndexOutOfBoundsException("List index out of bounds on remove");
         }
     } // end remove
@@ -69,7 +73,8 @@ public class ReferenceBased {
             Node curr = find(index);
             Object dataItem = curr.item;
             return dataItem;
-        } else {
+        }
+        else {
             throw new ListIndexOutOfBoundsException("List index out of bounds on get");
         }
     } // end get
@@ -86,4 +91,5 @@ public class ReferenceBased {
             System.out.println("Index " + i + ": " + get(i));
         }
     }
+    */
 }

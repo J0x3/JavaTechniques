@@ -1,16 +1,19 @@
 package LinkedLists;
 
-class Node {
-    Object item;
-    Node next;
+class Node<E> {
+    private E d;
+    private Node<E> n, p;
 
-    Node(Object newItem) {
-        item = newItem;
-        next = null;
-    } // end Constructor
+    public Node(E data, Node<E> next, Node<E> prev) {
+        d = data;
+        n = next;
+        p = prev;
+    }
 
-    Node(Object newItem, Node nextNode) {
-        item = newItem;
-        next = nextNode;
-    } // end Constructor
+    public E getData() { return d; }
+    public Node<E> getNext() { return n; }
+    public Node<E> getPrev() { return p; }
+    public void setNext(Node<E> newNext) { n = newNext; }
+    public void setPrev(Node<E> newPrev) { p = newPrev; }
+    public void setData(E element) { d = element; }
 }
