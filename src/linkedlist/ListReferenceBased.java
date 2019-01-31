@@ -1,21 +1,21 @@
-package LinkedLists;
+package linkedlist;
 
-import Exceptions.ListIndexOutOfBoundsException;
+import exceptions.ListIndexOutOfBoundsException;
 
-public class ReferenceBasedLinkedList {
-/*
-    private Node<E> head;
+public class ListReferenceBased implements LinkedListADT {
+
+    private Node head;
     private int numItems;
 
-    public ReferenceBasedLinkedList() {
+    public ListReferenceBased() {
         numItems = 0;
         head = null;
     } // end Default Constructor
 
-    private Node<E> find(int index) {
-        Node<E> curr = head;
+    public Node find(int index) {
+        Node curr = head;
         for (int skip = 0; skip < index; skip++) {
-            curr = curr.getNext();
+            curr = curr.next;
         }
         return curr;
     } // end find
@@ -91,5 +91,4 @@ public class ReferenceBasedLinkedList {
             System.out.println("Index " + i + ": " + get(i));
         }
     }
-    */
 }

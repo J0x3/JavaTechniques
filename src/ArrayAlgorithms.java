@@ -1,4 +1,4 @@
-import Arrays.*;
+import arrays.*;
 
 public class ArrayAlgorithms {
 
