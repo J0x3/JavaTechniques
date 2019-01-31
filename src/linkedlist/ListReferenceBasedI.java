@@ -2,12 +2,12 @@ package linkedlist;
 
 import exceptions.ListIndexOutOfBoundsException;
 
-public class ListReferenceBased implements LinkedListADT {
+public class ListReferenceBasedI implements ILinkedListADT {
 
     private Node head;
     private int numItems;
 
-    public ListReferenceBased() {
+    public ListReferenceBasedI() {
         numItems = 0;
         head = null;
     } // end Default Constructor

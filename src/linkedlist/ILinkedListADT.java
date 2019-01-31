@@ -2,7 +2,7 @@ package linkedlist;
 
 import exceptions.ListIndexOutOfBoundsException;
 
-public interface LinkedListADT {
+public interface ILinkedListADT {
     Node find(int index);
 
     boolean isEmpty();

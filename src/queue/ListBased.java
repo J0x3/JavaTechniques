@@ -1,13 +1,13 @@
 package queue;
 
-import linkedlist.ListReferenceBased;
+import linkedlist.ListReferenceBasedI;
 import exceptions.QueueException;
 
-public class ListBased implements Interface {
-    private ListReferenceBased aList;
+public class ListBased implements IQueueADT {
+    private ListReferenceBasedI aList;
 
     public ListBased() {
-        aList = new ListReferenceBased();
+        aList = new ListReferenceBasedI();
     }
 
     public boolean isEmpty() {

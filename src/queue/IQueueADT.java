@@ -1,7 +1,7 @@
 package queue;
 import exceptions.QueueException;
 
-public interface Interface {
+public interface IQueueADT {
     boolean isEmpty();
     // Determines whether a queue is empty.
     // Precondition: None.
