@@ -5,11 +5,11 @@ package factory;
 // Someone owns a farm
 // farm can harvest crops
 // crops made at different locations or farms
-public class FactoryMain
+public class Main
 {
     private final Farm farm;
 
-    public FactoryMain(Farm farm)
+    public Main(Farm farm)
     {
         this.farm = farm;
     }
@@ -31,11 +31,11 @@ public class FactoryMain
     public static void main(String[] args)
     {
         // Harvest crops from Smith Family Farm
-        FactoryMain factoryMain = new FactoryMain(new SmithFarm());
-        factoryMain.harvestCrops();
+        Main main = new Main(new SmithFarm());
+        main.harvestCrops();
 
         // Harvest crops from Johnson Farm
-        factoryMain = new FactoryMain(new JohnsonFarm());
-        factoryMain.harvestCrops();
+        main = new Main(new JohnsonFarm());
+        main.harvestCrops();
     }
 }
