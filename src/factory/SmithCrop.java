@@ -2,22 +2,22 @@ package factory;
 
 public class SmithCrop implements Crop
 {
-  private CropType cropType;
+    private CropType cropType;
 
-  public SmithCrop(CropType cropType)
-  {
-    this.cropType = cropType;
-  }
+    public SmithCrop(CropType cropType)
+    {
+      this.cropType = cropType;
+    }
 
-  @Override
-  public String toString()
-  {
-    return "Smith " + cropType + " crop.";
-  }
+    @Override
+    public String toString()
+    {
+        return "Smith " + cropType + " crop.";
+    }
 
-  @Override
-  public CropType getCropType()
-  {
-    return cropType;
-  }
+    @Override
+    public CropType getCropType()
+    {
+      return cropType;
+    }
 }
